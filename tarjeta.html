@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Digital</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Sección de fondo arriba */
+        header {
+        position: relative; 
+        background: 
+            linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%),
+            url('PNG/Fondo2.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+        .logo-container {
+            max-width: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .contact-icons a {
+            margin: 10px;
+        }
+
+        .contact-icons img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sección principal para el QR y otros contenidos */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .qr-section {
+            margin: 20px 0;
+        }
+
+        .qr-section img {
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #005092;
+            padding: 20px;
+        }
+
+        footer a {
+            margin: 0 10px;
+        }
+
+        footer img {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        footer img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media queries para pantallas más pequeñas */
+        @media (max-width: 480px) {
+            .contact-icons img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .qr-section img {
+                width: 120px;
+                height: 120px;
+            }
+
+            footer img {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="SVG/Logotipo.svg" alt="Logotipo San Miguel Servicios Legales">
+        </div>
+        <div class="contact-icons">
+            <a href="https://wa.me/56951971035" target="_blank">
+                <img src="SVG/Whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="tel:+56951971035" target="_blank">
+                <img src="SVG/Teléfono.svg" alt="Teléfono">
+            </a>
+            <a href="mailto:sanmiguel.sl@outlook.com" target="_blank">
+                <img src="SVG/Mail.svg" alt="Correo">
+            </a>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="qr-section">
+            <!-- Aquí puedes colocar tu código QR -->
+            <!-- <img src="QR.png" alt="Código QR de contacto"> -->
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/company/servicios-legales-san-miguel/" target="_blank">
+            <img src="SVG/Linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.facebook.com/people/Servicios-Legales-San-Miguel/61569927916819/?mibextid=LQQJ4d&rdid=4JouF0wrgbOHvCOb&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19aTqVYW9Y%2F%3Fmibextid%3DLQQJ4d" target="_blank">
+            <img src="SVG/Facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="SVG/Instagram.svg" alt="Instagram">
+        </a>
+    </footer>
+</body>
+</html>
