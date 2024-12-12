@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta Digital - San Miguel</title>
@@ -9,7 +8,7 @@
     <!-- Metadatos para Open Graph (vista previa) -->
     <meta property="og:title" content="San Miguel - Servicios Legales">
     <meta property="og:description" content="Conéctate con nuestros servicios legales a través de esta tarjeta digital. Haz clic para acceder a nuestros contactos y redes sociales.">
-    <meta property="og:image" content="https://startling-haupia-098d0a.netlify.app/PNG/Fondo2.jpg"> <!-- Ruta de la imagen -->
+    <meta property="og:image" content="https://startling-haupia-098d0a.netlify.app/PNG/Fondo2.jpg">
     <meta property="og:url" content="https://startling-haupia-098d0a.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -18,6 +17,7 @@
     <meta name="twitter:title" content="San Miguel - Servicios Legales">
     <meta name="twitter:description" content="Conéctate con nuestros servicios legales con esta tarjeta digital.">
     <meta name="twitter:image" content="https://startling-haupia-098d0a.netlify.app/PNG/Fondo2.jpg">
+
     <title>Tarjeta Digital</title>
     <style>
         body {
@@ -28,24 +28,23 @@
             min-height: 100vh;
         }
 
-        /* Sección de fondo arriba */
         header {
-        position: relative; 
-        background: 
-            linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%),
-            url('Portada.jpg') no-repeat center center;
-        background-size: cover;
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+            position: relative; 
+            background: 
+                linear-gradient(to bottom, rgba(255,255,255,0) 5%, rgba(255,255,255,1) 100%),
+                url('Portada.jpg') no-repeat center center;
+            background-size: cover;
+            /* Reducimos el padding para acercar el contenido a la parte inferior */
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .logo-container {
             max-width: 300px;
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .logo-container img {
@@ -54,11 +53,17 @@
             display: block;
         }
 
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .contact-icons {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 20px 0;
+            margin: 15px 0 5px 0;
         }
 
         .contact-icons a {
@@ -75,18 +80,28 @@
             transform: scale(1.1);
         }
 
-        /* Sección principal para el QR y otros contenidos */
+        .contact-legends p {
+            color: #005092;
+            text-align: center;
+            margin: 0;
+            font-weight: bold;
+        }
+
         .main-content {
-            flex: 1;
+            /* Ajustamos justificación para que el contenido aparezca más cercano a la parte superior */
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            padding: 20px;
+            justify-content: flex-start; 
+            /* Reducimos padding para acercar el contenido al header */
+            padding: 10px 20px;
         }
 
         .qr-section {
             margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .qr-section img {
@@ -94,7 +109,13 @@
             height: 150px;
         }
 
-        /* Footer */
+        .qr-legend p {
+            color: #005092;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
         footer {
             display: flex;
             justify-content: center;
@@ -117,7 +138,6 @@
             transform: scale(1.1);
         }
 
-        /* Media queries para pantallas más pequeñas */
         @media (max-width: 480px) {
             .contact-icons img {
                 width: 40px;
@@ -140,23 +160,29 @@
         <div class="logo-container">
             <img src="SVG/Logotipo.svg" alt="Logotipo San Miguel Servicios Legales">
         </div>
-        <div class="contact-icons">
-            <a href="https://wa.me/56951971035" target="_blank">
-                <img src="SVG/Whatsapp.svg" alt="WhatsApp">
-            </a>
-            <a href="tel:+56951971035" target="_blank">
-                <img src="SVG/Teléfono.svg" alt="Teléfono">
-            </a>
-            <a href="mailto:sanmiguel.sl@outlook.com" target="_blank">
-                <img src="SVG/Mail.svg" alt="Correo">
-            </a>
+        <div class="contact-section">
+            <div class="contact-icons">
+                <a href="https://wa.me/56951971035" target="_blank">
+                    <img src="SVG/Whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a href="tel:+56951971035" target="_blank">
+                    <img src="SVG/Teléfono.svg" alt="Teléfono">
+                </a>
+                <a href="mailto:sanmiguel.sl@outlook.com" target="_blank">
+                    <img src="SVG/Mail.svg" alt="Correo">
+                </a>
+            </div>
+            <div class="contact-legends">
+                <p>WhatsApp | Llamar | Correo</p>
+            </div>
         </div>
     </header>
     <div class="main-content">
         <div class="qr-section">
             <img src="qr-code.png" alt="Código QR de contacto">
-            <!-- Aquí puedes colocar tu código QR -->
-            <!-- <img src="QR.png" alt="Código QR de contacto"> -->
+            <div class="qr-legend">
+                <p>Escanea nuestros contactos aquí</p>
+            </div>
         </div>
     </div>
     <footer>
